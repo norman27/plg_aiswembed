@@ -18,8 +18,8 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="width" default="425" type="text" label="PLG_CONTENT_SOCCERWATCHEMBED_WIDTH" description="PLG_CONTENT_SOCCERWATCHEMBED_WIDTH_DESC" />
-				<field name="height" default="344" type="text" label="PLG_CONTENT_SOCCERWATCHEMBED_HEIGHT" description="PLG_CONTENT_SOCCERWATCHEMBED_HEIGHT_DESC" />
+				<field name="width" default="100%" type="text" label="PLG_CONTENT_SOCCERWATCHEMBED_WIDTH" description="PLG_CONTENT_SOCCERWATCHEMBED_WIDTH_DESC" />
+				<field name="height" default="500" type="text" label="PLG_CONTENT_SOCCERWATCHEMBED_HEIGHT" description="PLG_CONTENT_SOCCERWATCHEMBED_HEIGHT_DESC" />
 			</fieldset>
 		</fields>
 	</config>
