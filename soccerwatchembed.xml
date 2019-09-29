@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>Content - SoccerwatchEmbed</name>
+	<author>Norman Malessa</author>
+	<creationDate>2019/09/28</creationDate>
+	<copyright>Copyright (C) 2018 Norman Malessa. All rights reserved.</copyright>
+	<license>The MIT license; see LICENSE</license>
+	<authorEmail>mail@norman-malessa.de</authorEmail>
+	<authorUrl>www.norman-malessa.de</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_SOCCERWATCHEMBED_DESCRIPTION</description>
+	<files>
+		<filename plugin="soccerwatchembed">soccerwatchembed.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_soccerwatchembed.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="width" default="425" type="text" label="PLG_CONTENT_SOCCERWATCHEMBED_WIDTH" description="PLG_CONTENT_SOCCERWATCHEMBED_WIDTH_DESC" />
+				<field name="height" default="344" type="text" label="PLG_CONTENT_SOCCERWATCHEMBED_HEIGHT" description="PLG_CONTENT_SOCCERWATCHEMBED_HEIGHT_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name=""><![CDATA[http://joomla.norman-malessa.de/updates/plg_soccerwatchembed.xml]]></server>
+	</updateservers>
+</extension>
