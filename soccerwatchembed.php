@@ -8,7 +8,7 @@
 
 class plgContentSoccerwatchEmbed extends JPlugin
 {
-    CONST REGEX = '/{?\s*(https?:\/\/(?:www\.)?soccerwatch\.tv\/embed\/([0-9]+)\/highlight)\/?\s*}?/';
+    CONST REGEX = '/{?\s*(https?:\/\/(?:www\.)?(?:soccerwatch|aisw)\.tv\/embed(?:\/video)?\/([0-9]+)(?:\/highlight)?)\/?\s*}?/';
 
     /**
      * @param string $context
@@ -33,7 +33,7 @@ class plgContentSoccerwatchEmbed extends JPlugin
         $width = $this->params->get('width', '100%');
         $height = $this->params->get('height', '500');
 
-        return '<iframe id="soccerwatch_$2" frameborder="0" allowfullscreen'
+        return '<iframe id="soccerwatch_$3" frameborder="0" allowfullscreen'
             . ' width="' . $width . '" height="' . $height . '" src="$1"></iframe>';
     }
 }
